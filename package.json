@@ -21,5 +21,8 @@
     "simple-youtube-api": "^5.2.1",
     "ytdl-core": "^4.9.2",
     "ytsearcher": "^1.2.4"
+  },
+  "engines": {
+    "node": "16.x"
   }
 }
