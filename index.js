@@ -1,11 +1,20 @@
+import dotenv from 'dotenv';
+dotenv.config();
+
 import { Client } from 'discord.js';
 import ytdl from 'ytdl-core';
 import { YTSearcher } from 'ytsearcher';
 import { joinVoiceChannel, createAudioResource, createAudioPlayer, VoiceConnectionStatus } from "@discordjs/voice";
 import YouTube from 'simple-youtube-api';
 
-import dotenv from 'dotenv';
-dotenv.config();
+const express = require('express');
+
+const app = express();
+
+const port = process.env.PORT || 3000;
+app.listen(port, () => console.log(`Listening on port ${port}`));
+
+
 
 const key = process.env.YT_KEY1;
 const backupKey = process.env.YT_KEY2;
