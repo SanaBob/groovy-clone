@@ -7,7 +7,7 @@ import { YTSearcher } from 'ytsearcher';
 import { joinVoiceChannel, createAudioResource, createAudioPlayer, VoiceConnectionStatus } from "@discordjs/voice";
 import YouTube from 'simple-youtube-api';
 
-const express = require('express');
+import express from 'express';
 
 const app = express();
 
