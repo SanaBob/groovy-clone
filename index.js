@@ -327,6 +327,8 @@ client.on("messageCreate", async (message) => {
             ${prefix}help - View this message
             \`\`\`
             `);
+        } else if (command === "duong") {
+            return message.channel.send("no ae");
         }
     } catch (e) {
         console.log(e);
